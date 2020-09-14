@@ -112,6 +112,7 @@ public:
 		}
 
 		argCount++;
+		bytes[0] = argCount;
 	}
 
 	Variant& operator<<(std::variant<std::string, long long, std::vector<float>> arg) {
